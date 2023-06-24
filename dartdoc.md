@@ -41,3 +41,27 @@ Snapshot files, a core part of the Dart VM, store objects and other runtime data
     The Dart core libraries can be compiled into a snapshot file that allows fast loading of the libraries. Most standard distributions of the main Dart VM have a prebuilt snapshot for the core libraries that is loaded at runtime.
 - <h4>Object snapshots</h4>
     Dart uses snapshots to serialize messages that it passes between isolates. As a very asynchronous language, Dart uses isolates for concurrency. An object generates a snapshot, transfers it to another isolate, then the isolate deserializes it.
+
+
+  static type checking able type in both dynamic and static type 
+
+  sound null saftey -> value cannot be null 
+
+  <a link href="https://dart.dev/guides/libraries#web-platform-libraries"> core libraries available in dart </a>
+
+  <a link href="https://dart.dev/overview#libraries"> core libraries in dart for everyday use </a>
+
+  to install third-party libraries and api  
+use -> https://pub.dev/
+```
+dart pub add package_name
+```
+
+
+Dart platform working 
+
+ Native platform -> for mobile / desktop app dart uses VM with just-in-time (JIT) compilation and AOT (ahead-of-time)(AOT) compiler for producing machine code 
+
+ web platform -> dart web compiler translate code into javascript 
+
+![Alt text](image-1.png)
